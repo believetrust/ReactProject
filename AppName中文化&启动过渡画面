@@ -1,0 +1,33 @@
+1. 在RN中，默认的应用名称是项目的名称，但项目名称一般都是英文的，所以，项目真正的名字一般还是要修改为中文的，具体的修改是在Info.plist中。
+   
+    <key>CFBundleDevelopmentRegion</key>
+    <string>zh_CN</string>
+    <key>CFBundleDisplayName</key>
+    <string>加油</string>
+    
+2. 第一个string中，将原始的en改为了zh_CH.
+   并添加了一个key，也就是默认的名字字段。并继续添加string，使其 value 为 最后应用呈现的名字，比如“加油”。
+   
+************************************************************************************************************************
+
+
+1. 启动的过渡画面，原始是白屏，然后中间有一个项目的名称，下方有一个powered by ReactNative。在真实应用中，我们不可能这样使用。
+
+ <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" 
+ contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" 
+ text="操练喜乐90天" textAlignment="center" lineBreakMode="tailTruncation" 
+ baselineAdjustment="alignBaselines" minimumFontSize="9" 
+ translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+    <rect key="frame" x="20" y="439" width="441" height="21"/>
+    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+    <nil key="highlightedColor"/>
+ </label>
+                
+ <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" 
+ contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" 
+ text="书青要加油💪" textAlignment="center" lineBreakMode="middleTruncation" 
+ baselineAdjustment="alignBaselines" minimumFontSize="18" 
+ translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
+ 
+ 两个label，两个text文字里的value要改变。
