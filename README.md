@@ -1,2 +1,2 @@
-# studyRN
-RN学习中知识积累
+# ReactProject -- 一边学习，一边使用
+React项目实战
